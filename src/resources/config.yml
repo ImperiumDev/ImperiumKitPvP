@@ -1,0 +1,6 @@
+sql:
+    host: sql3.freemysqlhosting.net
+    port: 3306
+    username: sql380146
+    password: lE1%kE7!
+    database: sql380146
