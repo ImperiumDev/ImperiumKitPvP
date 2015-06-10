@@ -21,12 +21,8 @@ public class MySQLManager {
     }
 
     public void setupDB() throws SQLException, ClassNotFoundException {
-        /*
-        this.db = new MySQL(this.main, main.getConfig().getString("sql.host"), main.getConfig().getString("sql.port"),
-                main.getConfig().getString("sql.database"), main.getConfig().getString("sql.username"), main.getConfig().getString("sql.password"));
-                */
         this.db = new MySQL(this.main, "sql3.freemysqlhosting.net", "3306",
-                "sql380146", "sql380146", "lE1%kE7!");
+                "sql380146", "USERNAME", "PASSWORD");
         this.db.openConnection();
         Statement statement = this.db.getConnection().createStatement();
         statement.executeUpdate("CREATE TABLE IF NOT EXISTS `data_kitpvp` (`uuid` varchar(50),`name` varchar(17),`kills` int,`deaths` int,`coins` int)");

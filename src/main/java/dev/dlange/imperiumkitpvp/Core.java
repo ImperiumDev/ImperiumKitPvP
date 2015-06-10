@@ -33,7 +33,6 @@ public class Core extends JavaPlugin {
             e.printStackTrace();
         }
         setupEvents();
-        saveDefaultConfig();
     }
 
     @Override
